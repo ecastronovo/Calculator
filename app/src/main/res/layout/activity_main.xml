@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Number"
+        android:textSize="25dip"
+        android:ems="10"
+        />
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="first number">
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Second Number"
+        android:textSize="25dip"
+        android:ems="10"
+        />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="second number"/>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:orientation="horizontal">
+        <Button
+            android:layout_column="0"
+            android:text="+"
+            android:onClick="add"/>
+        <Button
+            android:layout_column="1"
+            android:text="-"
+            android:onClick="sub"/>
+        <Button
+            android:layout_column="2"
+            android:text="*"
+            android:onClick="mul"/>
+        <Button
+            android:layout_column="3"
+            android:text="/"
+            android:onClick="div"/>
+    </GridLayout>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="result"
+        android:ems="10"
+        android:textSize="25dip"
+        android:gravity="center"
+        />
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
